@@ -1,8 +1,8 @@
-from pyscad.sign_gen.sign_shapes import SignRectangle
+from pyscad.sign_gen.bases.sign_rectangle_arch import SignRectangleArch
 from pythonscad import show
 
-rect = SignRectangle()
+rect = SignRectangleArch()
 
 rect.build()
-#show(rect.base.union(rect.border))
+show(rect.base)
 show(rect.border)
